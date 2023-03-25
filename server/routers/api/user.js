@@ -16,7 +16,9 @@ router.get('/userList', (req, respond) => {
 })
 
 router.get('/login', (req, respond) => {
+  console.log(User,'test-login')
   User.findOne({ name: req.query.name }).then(res => {
+    console.log(res,'res-999')
     if (res) {
       if (res.password === req.query.password) {
         respond.json({

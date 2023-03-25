@@ -1,3 +1,3 @@
 module.exports = {
-  mongoURI: 'mongodb://localhost:27017/HM-SYS'
+  mongoURI: 'mongodb://wnxx:qwer1234@gis-house.usrej59.mongodb.net/test'
 }

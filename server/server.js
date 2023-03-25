@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 
 
 //数据库连接
-mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }).then(res=>console.log(res,'res')).catch(error=>console.log(error,'error'));
 var db = mongoose.connection;
 db.once('open', function () {
   console.log('数据库已连接');
